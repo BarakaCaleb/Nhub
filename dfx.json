@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Nhub_backend": {
+      "main": "src/Nhub_backend/main.mo",
+      "type": "motoko"
+    },
+    "Nhub_frontend": {
+      "dependencies": [
+        "Nhub_backend"
+      ],
+      "source": [
+        "src/Nhub_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Nhub_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
